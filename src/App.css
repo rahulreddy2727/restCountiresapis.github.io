@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.test {
+  width: 10px !important;
+}
+.mainDiv {
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 20px;
+}
+.regionMainDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  overflow: auto;
+}
+.alignRegions {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 20px;
+  height: 80vh;
+  overflow: auto;
+}
+.regionTag {
+  /* background-color: blue; */
+  opacity: 0.4;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+.regionNameTag {
+  /* opacity: 0.4; */
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+.bg0 {
+  background-color: blue;
+}
+.bg1 {
+  background-color: orange;
+}
+.bg2 {
+  background-color: gray;
+}
+.bg3 {
+  background-color: chartreuse;
+}
+.bg4 {
+  background-color: darksalmon;
+}
+.bg5 {
+  background-color: coral;
+}
+
+.flagIcon {
+  height: 20px;
+  width: 20px;
+}
+.inputFlagIcon {
+  height: 40px;
+  width: 40px;
+}
+.titleTag {
+  color: gray;
+  font-size: 14px;
+}
+.alignInputTags {
+  display: flex;
+  flex-direction: column;
+}
+.alignFlag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputTag {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.addTri {
+  position: relative;
+}
+/* .addTri::before {
+} */
+.addTri::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  /* left: 0; */
+  right: -16px;
+  bottom: 45px;
+  border-style: solid;
+  border-width: 18px 0 18px 18px;
+}
+.addTri1::before {
+  border-color: transparent transparent transparent blue;
+}
+.addTri2::before {
+  border-color: transparent transparent transparent orange;
+}
+.addTri3::before {
+  border-color: transparent transparent transparent gray;
+}
+.addTri4::before {
+  border-color: transparent transparent transparent chartreuse;
+}
+.addTri5::before {
+  border-color: transparent transparent transparent darksalmon;
+}
+.addTri6::before {
+  border-color: transparent transparent transparent coral;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
